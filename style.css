@@ -15,23 +15,44 @@ body {
 }
 
 .slides-container {
-  min-width: 80%;
-  min-height: 80vh;
-  background-color: red;
+  width: 800px;
+  height: 500px;
   position: relative;
 }
 
-.slides-container img {
+.slides-container > img {
   max-width: 30px;
   height: 30px;
   position: absolute;
 }
 
 #previous-icon {
-  top: calc(50% - 30px);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
 }
 
 #next-icon {
-  top: calc(50% - 30px);
+  top: 50%;
+  transform: translateY(-50%);
   right: 0;
+  z-index: 1;
+}
+
+.slides {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  transform: translateX(0);
+  overflow: hidden;
+}
+
+.slides img {
+  max-width: 100%;
+}
+
+#image-one,
+#image-two,
+#image-three {
+  transition: transform 500ms ease-in-out;
 }
