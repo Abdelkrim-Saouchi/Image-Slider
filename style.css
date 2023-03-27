@@ -10,6 +10,7 @@ body {
   min-height: 100dvh;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -24,6 +25,7 @@ body {
   max-width: 30px;
   height: 30px;
   position: absolute;
+  cursor: pointer;
 }
 
 #previous-icon {
@@ -49,10 +51,29 @@ body {
 
 .slides img {
   max-width: 100%;
+  object-fit: contain;
 }
 
 #image-one,
 #image-two,
 #image-three {
   transition: transform 500ms ease-in-out;
+}
+
+.dots-container {
+  margin-top: 16px;
+  display: flex;
+}
+
+.dot-indicator {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.dot-indicator.current-slide {
+  background-color: rgba(0, 0, 0, 0.7);
 }
