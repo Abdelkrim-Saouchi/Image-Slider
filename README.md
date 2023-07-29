@@ -1,2 +1,2 @@
 # Image-Slider
-live demo [here](https://karim-saou.github.io/Image-Slider/)
+live demo [here](https://abdelkrim-saouchi.github.io/Image-Slider/)
